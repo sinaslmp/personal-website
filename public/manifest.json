@@ -1,0 +1,16 @@
+{
+  "name": "Sina Soleymanpour",
+  "short_name": "Sina",
+  "description": "Senior Full Stack Engineer — AI, Backend & Modern Web",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#6366f1",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

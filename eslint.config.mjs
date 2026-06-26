@@ -13,6 +13,14 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
   ]),
+  {
+    rules: {
+      // Allow the common SSR hydration pattern: useEffect(() => setState(true), [])
+      "react-hooks/set-state-in-effect": "off",
+      // Allow unused vars that are prefixed with underscore
+      "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }],
+    },
+  },
 ]);
 
 export default eslintConfig;
