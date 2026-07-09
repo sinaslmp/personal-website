@@ -70,7 +70,7 @@ export default function AboutPage() {
                   { label: "Location", value: "Milan, Italy" },
                   { label: "Status", value: "Open to opportunities" },
                   { label: "Focus", value: "AI & Backend Engineering" },
-                  { label: "Experience", value: "8+ years" },
+                  { label: "Experience", value: "4+ years" },
                   { label: "Languages", value: "English, Persian, Italian (learning)" },
                 ].map((fact) => (
                   <div key={fact.label}>

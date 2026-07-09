@@ -137,7 +137,7 @@ export function HeroSection() {
           className="mt-20 grid grid-cols-2 sm:grid-cols-4 gap-8 pt-8 border-t border-border"
         >
           {[
-            { value: "8+", label: "Years Experience" },
+            { value: "4+", label: "Years Experience" },
             { value: "5+", label: "Production Apps" },
             { value: "3", label: "Countries Worked" },
             { value: "10k+", label: "Users Served" },

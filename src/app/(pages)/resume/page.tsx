@@ -53,7 +53,7 @@ export default function ResumePage() {
           <section className="p-8 border-b border-border">
             <h3 className="text-xs font-semibold text-primary uppercase tracking-wider mb-3">Summary</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Senior Full Stack Engineer with 8+ years of experience building production applications. Specializing in AI-powered systems, Python backend development (Django, FastAPI), and modern web frontends (Next.js, React). Based in Milan, Italy, open to remote EU opportunities.
+              Senior Full Stack Engineer with 4+ years of experience building production applications. Specializing in AI-powered systems, Python backend development (Django, FastAPI), and modern web frontends (Next.js, React). Based in Milan, Italy, open to remote EU opportunities.
             </p>
           </section>
 
