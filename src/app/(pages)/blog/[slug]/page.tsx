@@ -82,8 +82,8 @@ export default async function BlogPostPage({ params }: PageProps) {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
         <div className="p-6 rounded-xl border border-border bg-card">
           <div className="flex items-start gap-4">
-            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center shrink-0">
-              <span className="text-white font-bold">S</span>
+            <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center shrink-0">
+              <span className="text-primary-foreground font-bold">S</span>
             </div>
             <div className="flex-1">
               <h3 className="font-semibold text-foreground">{siteConfig.author.name}</h3>

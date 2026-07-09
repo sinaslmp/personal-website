@@ -5,6 +5,7 @@ import { PageHero } from "@/components/common/PageHero"
 import { AnimatedSection } from "@/components/common/AnimatedSection"
 import { Badge } from "@/components/ui/badge"
 import { getAllBlogPosts } from "@/lib/mdx"
+import { siteConfig } from "@/config/site"
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -71,6 +72,29 @@ export default function BlogPage() {
           <div className="text-center py-16 text-muted-foreground">
             No posts yet. Check back soon.
           </div>
+        )}
+
+        {posts.length > 0 && (
+          <AnimatedSection delay={posts.length * 0.1} className="mt-6">
+            <div className="p-6 rounded-xl border border-dashed border-border text-center">
+              <p className="text-sm text-muted-foreground">
+                More writing on engineering and AI is on the way. In the meantime, follow along on{" "}
+                <a
+                  href={siteConfig.author.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline"
+                >
+                  GitHub
+                </a>{" "}
+                or{" "}
+                <Link href="/contact" className="text-primary hover:underline">
+                  get in touch
+                </Link>
+                .
+              </p>
+            </div>
+          </AnimatedSection>
         )}
       </div>
     </>

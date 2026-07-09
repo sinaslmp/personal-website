@@ -10,9 +10,8 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 -left-20 w-72 h-72 bg-indigo-500/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-violet-500/15 rounded-full blur-3xl animate-pulse delay-1000" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-indigo-600/10 rounded-full blur-3xl animate-pulse delay-500" />
+        <div className="absolute inset-0 [background-image:linear-gradient(to_right,var(--border)_1px,transparent_1px),linear-gradient(to_bottom,var(--border)_1px,transparent_1px)] [background-size:56px_56px] opacity-[0.35] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,black,transparent)]" />
+        <div className="absolute top-0 -left-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
       </div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 w-full">
@@ -93,34 +92,36 @@ export function HeroSection() {
           </div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
             className="hidden lg:flex items-center justify-center"
           >
-            <div className="relative w-80 h-80">
-              <div className="absolute inset-0 rounded-full border border-primary/20 animate-spin" style={{ animationDuration: "20s" }} />
-              <div className="absolute inset-8 rounded-full border border-primary/30 animate-spin" style={{ animationDuration: "15s", animationDirection: "reverse" }} />
-              <div className="absolute inset-16 rounded-full border border-primary/40 animate-spin" style={{ animationDuration: "10s" }} />
-
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="relative">
-                  <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center shadow-2xl shadow-indigo-500/25">
-                    <span className="text-white text-3xl font-bold">S</span>
-                  </div>
-                  <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-600 opacity-30 blur-md" />
+            <div className="relative w-full max-w-md">
+              <div className="rounded-xl border border-border bg-card/80 backdrop-blur-sm shadow-xl overflow-hidden">
+                <div className="flex items-center gap-1.5 px-4 py-3 border-b border-border bg-muted/40">
+                  <span className="h-2.5 w-2.5 rounded-full bg-destructive/60" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-muted-foreground/30" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-muted-foreground/30" />
+                  <span className="ml-3 text-xs text-muted-foreground font-mono">engineer.ts</span>
+                </div>
+                <div className="p-5 font-mono text-sm leading-relaxed">
+                  <div><span className="text-primary">const</span> <span className="text-foreground">engineer</span> = {"{"}</div>
+                  <div className="pl-4"><span className="text-muted-foreground">role:</span> <span className="text-emerald-500">&quot;Senior Full Stack&quot;</span>,</div>
+                  <div className="pl-4"><span className="text-muted-foreground">stack:</span> [<span className="text-emerald-500">&quot;Next.js&quot;</span>, <span className="text-emerald-500">&quot;Django&quot;</span>, <span className="text-emerald-500">&quot;FastAPI&quot;</span>],</div>
+                  <div className="pl-4"><span className="text-muted-foreground">focus:</span> <span className="text-emerald-500">&quot;AI &amp; production systems&quot;</span>,</div>
+                  <div className="pl-4"><span className="text-muted-foreground">shipping:</span> <span className="text-primary">true</span>,</div>
+                  <div>{"}"}</div>
                 </div>
               </div>
 
               {[
-                { label: "AI Engineering", position: "top-2 left-2" },
-                { label: "Django / FastAPI", position: "top-2 right-2" },
-                { label: "Next.js", position: "bottom-2 left-2" },
-                { label: "PostgreSQL", position: "bottom-2 right-2" },
+                { label: "AI Engineering", position: "-top-4 -left-6" },
+                { label: "PostgreSQL", position: "-bottom-4 -right-6" },
               ].map((badge) => (
                 <div
                   key={badge.label}
-                  className={`absolute ${badge.position} bg-background/90 backdrop-blur-sm border border-border rounded-lg px-3 py-1.5 text-xs font-medium text-foreground shadow-lg`}
+                  className={`absolute ${badge.position} bg-background border border-border rounded-lg px-3 py-1.5 text-xs font-medium text-foreground shadow-lg`}
                 >
                   {badge.label}
                 </div>
