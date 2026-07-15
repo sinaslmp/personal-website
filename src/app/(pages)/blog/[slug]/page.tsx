@@ -87,7 +87,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             </div>
             <div className="flex-1">
               <h3 className="font-semibold text-foreground">{siteConfig.author.name}</h3>
-              <p className="text-sm text-muted-foreground mb-3">Senior Full Stack Engineer · Milan, Italy</p>
+              <p className="text-sm text-muted-foreground mb-3">Senior Full Stack Engineer · Pavia, Italy</p>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                 Building AI-powered systems, backend APIs, and modern web applications. Open to remote EU opportunities.
               </p>

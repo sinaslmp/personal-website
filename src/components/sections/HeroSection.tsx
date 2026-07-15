@@ -57,7 +57,7 @@ export function HeroSection() {
               className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-xl"
             >
               Senior Full Stack Engineer specializing in AI, Backend & Modern Web.
-              Based in Milan, open to EU remote opportunities.
+              Based in Pavia, open to EU remote opportunities.
             </motion.p>
 
             <motion.div
@@ -95,7 +95,7 @@ export function HeroSection() {
               <SocialLinks />
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 text-primary" />
-                <span>Milan, Italy · Open to Remote EU</span>
+                <span>Pavia, Italy · Open to Remote EU</span>
               </div>
             </motion.div>
           </div>

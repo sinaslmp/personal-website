@@ -42,7 +42,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteConfig.title,
     description: siteConfig.description,
-    creator: "@sinaslmp",
     images: [siteConfig.ogImage],
   },
   robots: {
@@ -89,7 +88,7 @@ export default function RootLayout({
               },
               address: {
                 "@type": "PostalAddress",
-                addressLocality: "Milan",
+                addressLocality: "Pavia",
                 addressCountry: "IT",
               },
             }),

@@ -133,7 +133,7 @@ export default function Image() {
         >
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
             <span style={{ color: "#6366f1", fontSize: 18 }}>📍</span>
-            <span style={{ color: "#71717a", fontSize: 18 }}>Milan, Italy · Open to Remote EU</span>
+            <span style={{ color: "#71717a", fontSize: 18 }}>Pavia, Italy · Open to Remote EU</span>
           </div>
           <div
             style={{

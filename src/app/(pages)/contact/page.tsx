@@ -47,7 +47,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-xs text-muted-foreground mb-0.5">Location</p>
-                    <p className="text-sm font-medium text-foreground">Milan, Italy</p>
+                    <p className="text-sm font-medium text-foreground">Pavia, Italy</p>
                     <p className="text-xs text-muted-foreground">Open to Remote EU</p>
                   </div>
                 </div>
@@ -98,7 +98,7 @@ export default function ContactPage() {
               <p className="text-sm text-muted-foreground leading-relaxed">
                 <span className="text-foreground font-medium">Currently open to opportunities.</span>{" "}
                 Looking for senior engineering roles at European companies building ambitious products.
-                Remote or hybrid in Milan.
+                Remote or hybrid in Pavia.
               </p>
             </div>
           </AnimatedSection>

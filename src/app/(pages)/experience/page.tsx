@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
-import { GraduationCap } from "lucide-react"
+import { GraduationCap, Award, ExternalLink } from "lucide-react"
 import { PageHero } from "@/components/common/PageHero"
 import { AnimatedSection } from "@/components/common/AnimatedSection"
 import { TimelineItem } from "@/components/common/TimelineItem"
-import { experiences, education } from "@/config/experience"
+import { experiences, education, certifications } from "@/config/experience"
 
 export const metadata: Metadata = {
   title: "Experience",
@@ -55,6 +55,34 @@ export default function ExperiencePage() {
                 </div>
                 <p className="text-sm text-muted-foreground">{edu.description}</p>
               </div>
+            ))}
+          </div>
+        </AnimatedSection>
+
+        <AnimatedSection className="mt-16">
+          <div className="flex items-center gap-3 mb-8">
+            <div className="p-2 rounded-lg bg-primary/10">
+              <Award className="h-5 w-5 text-primary" />
+            </div>
+            <h2 className="text-xl font-semibold text-foreground">Certifications</h2>
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-4">
+            {certifications.map((cert) => (
+              <a
+                key={cert.name}
+                href={cert.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-start justify-between gap-3 p-6 rounded-xl border border-border bg-card transition-all duration-300 ease-out hover:-translate-y-1 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10"
+              >
+                <div>
+                  <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">{cert.name}</h3>
+                  <p className="text-primary text-sm">{cert.issuer}</p>
+                  <p className="text-sm text-muted-foreground mt-1">{cert.year}</p>
+                </div>
+                <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors shrink-0 mt-1" />
+              </a>
             ))}
           </div>
         </AnimatedSection>

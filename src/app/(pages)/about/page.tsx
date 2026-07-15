@@ -7,7 +7,7 @@ import { education } from "@/config/experience"
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Learn about Sina Soleymanpour — Senior Full Stack Engineer based in Milan, Italy.",
+  description: "Learn about Sina Soleymanpour — Senior Full Stack Engineer based in Pavia, Italy.",
 }
 
 const whatIDo = [
@@ -44,7 +44,7 @@ export default function AboutPage() {
     <>
       <PageHero
         title="About Me"
-        subtitle="Senior Full Stack Engineer based in Milan, building AI-powered products and backend systems."
+        subtitle="Senior Full Stack Engineer based in Pavia, building AI-powered products and backend systems."
         badge="About"
       />
 
@@ -52,7 +52,7 @@ export default function AboutPage() {
         <div className="grid lg:grid-cols-3 gap-12 mb-20">
           <AnimatedSection className="lg:col-span-2 space-y-5">
             <p className="text-lg text-foreground leading-relaxed">
-              I&apos;m Sina Soleymanpour, a Senior Full Stack Engineer based in Milan, Italy with a deep focus on AI-powered systems, backend architecture, and modern web applications. With expertise spanning Python, Django, FastAPI, and Next.js, I build products that are fast, reliable, and production-grade. Currently open to senior engineering roles at European companies — remote or hybrid.
+              I&apos;m Sina Soleymanpour, a Senior Full Stack Engineer based in Pavia, Italy with a deep focus on AI-powered systems, backend architecture, and modern web applications. With expertise spanning Python, Django, FastAPI, and Next.js, I build products that are fast, reliable, and production-grade. Currently open to senior engineering roles at European companies — remote or hybrid.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               My journey in software engineering began with a fascination for how intelligent systems could automate complex human tasks. Over the years, I&apos;ve architected and shipped backend services handling millions of requests, built AI agents that reduce manual work by 80%, and created full-stack products from zero to production.
@@ -67,7 +67,7 @@ export default function AboutPage() {
               <h3 className="font-semibold text-foreground mb-4">Quick Facts</h3>
               <dl className="space-y-3">
                 {[
-                  { label: "Location", value: "Milan, Italy" },
+                  { label: "Location", value: "Pavia, Italy" },
                   { label: "Status", value: "Open to opportunities" },
                   { label: "Focus", value: "AI & Backend Engineering" },
                   { label: "Experience", value: "4+ years" },
@@ -90,8 +90,8 @@ export default function AboutPage() {
               const Icon = item.icon
               return (
                 <AnimatedSection key={item.title} delay={index * 0.1}>
-                  <div className="flex gap-4 p-6 rounded-xl border border-border bg-card transition-all duration-300 ease-out hover:-translate-y-1 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10">
-                    <div className="shrink-0 p-2 rounded-lg bg-primary/10">
+                  <div className="flex items-start gap-4 p-6 rounded-xl border border-border bg-card transition-all duration-300 ease-out hover:-translate-y-1 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10">
+                    <div className="shrink-0 self-start p-2.5 rounded-lg bg-primary/10">
                       <Icon className="h-5 w-5 text-primary" />
                     </div>
                     <div>

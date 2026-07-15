@@ -16,11 +16,11 @@ export function Footer() {
               <span className="text-lg font-bold text-primary">.</span>
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs">
-              Senior Full Stack Engineer specializing in AI, Backend & Modern Web. Based in Milan, open to EU remote opportunities.
+              Senior Full Stack Engineer specializing in AI, Backend & Modern Web. Based in Pavia, open to EU remote opportunities.
             </p>
             <div className="flex items-center gap-1 mt-3 text-sm text-muted-foreground">
               <MapPin className="h-3 w-3" />
-              <span>Milan, Italy</span>
+              <span>Pavia, Italy</span>
             </div>
           </div>
 

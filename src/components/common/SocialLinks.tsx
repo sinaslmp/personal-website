@@ -1,5 +1,5 @@
 import { Mail } from "lucide-react"
-import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/common/BrandIcons"
+import { GithubIcon, LinkedinIcon } from "@/components/common/BrandIcons"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 
@@ -12,7 +12,6 @@ export function SocialLinks({ className, iconSize = 20 }: SocialLinksProps) {
   const links = [
     { href: siteConfig.author.github, icon: GithubIcon, label: "GitHub" },
     { href: siteConfig.author.linkedin, icon: LinkedinIcon, label: "LinkedIn" },
-    { href: siteConfig.author.twitter, icon: TwitterIcon, label: "Twitter" },
     { href: `mailto:${siteConfig.author.email}`, icon: Mail, label: "Email" },
   ]
 

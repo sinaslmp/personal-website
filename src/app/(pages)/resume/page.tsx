@@ -3,7 +3,7 @@ import Link from "next/link"
 import { Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { AnimatedSection } from "@/components/common/AnimatedSection"
-import { experiences, education } from "@/config/experience"
+import { experiences, education, certifications } from "@/config/experience"
 import { skills } from "@/config/skills"
 import { siteConfig } from "@/config/site"
 
@@ -19,7 +19,7 @@ export default function ResumePage() {
         <AnimatedSection className="flex items-start justify-between mb-12 flex-wrap gap-4">
           <div>
             <h1 className="text-3xl font-bold text-foreground">Resume</h1>
-            <p className="text-muted-foreground mt-1">Senior Full Stack Engineer — Milan, Italy</p>
+            <p className="text-muted-foreground mt-1">Senior Full Stack Engineer — Pavia, Italy</p>
           </div>
           <Button asChild className="gap-2">
             <a href="/resume.pdf" download>
@@ -53,7 +53,7 @@ export default function ResumePage() {
           <section className="p-8 border-b border-border">
             <h3 className="text-xs font-semibold text-primary uppercase tracking-wider mb-3">Summary</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Senior Full Stack Engineer with 4+ years of experience building production applications. Specializing in AI-powered systems, Python backend development (Django, FastAPI), and modern web frontends (Next.js, React). Based in Milan, Italy, open to remote EU opportunities.
+              Senior Full Stack Engineer with 4+ years of experience building production applications. Specializing in AI-powered systems, Python backend development (Django, FastAPI), and modern web frontends (Next.js, React). Based in Pavia, Italy, open to remote EU opportunities.
             </p>
           </section>
 
@@ -101,17 +101,41 @@ export default function ResumePage() {
             </dl>
           </section>
 
-          <section className="p-8">
+          <section className="p-8 border-b border-border">
             <h3 className="text-xs font-semibold text-primary uppercase tracking-wider mb-6">Education</h3>
-            {education.map((edu) => (
-              <div key={edu.degree} className="flex flex-col sm:flex-row sm:justify-between gap-1">
-                <div>
-                  <h4 className="font-semibold text-foreground">{edu.degree}</h4>
-                  <p className="text-sm text-primary">{edu.institution}</p>
+            <div className="space-y-4">
+              {education.map((edu) => (
+                <div key={edu.degree} className="flex flex-col sm:flex-row sm:justify-between gap-1">
+                  <div>
+                    <h4 className="font-semibold text-foreground">{edu.degree}</h4>
+                    <p className="text-sm text-primary">{edu.institution}</p>
+                  </div>
+                  <span className="text-sm text-muted-foreground shrink-0">{edu.period}</span>
                 </div>
-                <span className="text-sm text-muted-foreground shrink-0">{edu.period}</span>
-              </div>
-            ))}
+              ))}
+            </div>
+          </section>
+
+          <section className="p-8">
+            <h3 className="text-xs font-semibold text-primary uppercase tracking-wider mb-6">Certifications</h3>
+            <div className="space-y-3">
+              {certifications.map((cert) => (
+                <div key={cert.name} className="flex flex-col sm:flex-row sm:justify-between gap-1">
+                  <div>
+                    <a
+                      href={cert.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-semibold text-foreground hover:text-primary transition-colors"
+                    >
+                      {cert.name}
+                    </a>
+                    <p className="text-sm text-primary">{cert.issuer}</p>
+                  </div>
+                  <span className="text-sm text-muted-foreground shrink-0">{cert.year}</span>
+                </div>
+              ))}
+            </div>
           </section>
         </div>
 

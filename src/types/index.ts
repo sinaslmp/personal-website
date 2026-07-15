@@ -45,6 +45,13 @@ export interface Education {
   description: string
 }
 
+export interface Certification {
+  name: string
+  issuer: string
+  year: string
+  url: string
+}
+
 export interface NavLink {
   href: string
   label: string

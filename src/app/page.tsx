@@ -11,7 +11,7 @@ import { skills } from "@/config/skills"
 
 export const metadata: Metadata = {
   title: "Sina Soleymanpour — Senior Full Stack Engineer",
-  description: "Senior Full Stack Engineer specializing in AI, Python, Django, FastAPI, and Next.js. Based in Milan, Italy.",
+  description: "Senior Full Stack Engineer specializing in AI, Python, Django, FastAPI, and Next.js. Based in Pavia, Italy.",
 }
 
 export default function HomePage() {
