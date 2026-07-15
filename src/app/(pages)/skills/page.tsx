@@ -33,7 +33,7 @@ export default function SkillsPage() {
         <div className="grid sm:grid-cols-2 gap-8">
           {skillCategories.map((category, index) => (
             <AnimatedSection key={category.key} delay={index * 0.05}>
-              <div className="p-6 rounded-xl border border-border bg-card h-full">
+              <div className="p-6 rounded-xl border border-border bg-card h-full transition-all duration-300 ease-out hover:-translate-y-1 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10">
                 <h2 className="text-base font-semibold text-foreground mb-1">{category.label}</h2>
                 <p className="text-xs text-muted-foreground mb-4">{category.description}</p>
                 <div className="flex flex-wrap gap-2">

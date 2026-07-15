@@ -11,7 +11,16 @@ export function HeroSection() {
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute inset-0 [background-image:linear-gradient(to_right,var(--border)_1px,transparent_1px),linear-gradient(to_bottom,var(--border)_1px,transparent_1px)] [background-size:56px_56px] opacity-[0.35] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,black,transparent)]" />
-        <div className="absolute top-0 -left-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+        <motion.div
+          className="absolute top-0 -left-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl"
+          animate={{ x: [0, 30, 0], y: [0, 20, 0] }}
+          transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
+        />
+        <motion.div
+          className="absolute bottom-0 -right-24 w-md h-112 bg-primary/5 rounded-full blur-3xl"
+          animate={{ x: [0, -25, 0], y: [0, -15, 0] }}
+          transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
+        />
       </div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 w-full">

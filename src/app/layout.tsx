@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google"
 import { Providers } from "@/components/providers/Providers"
 import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
+import { ScrollProgressBar } from "@/components/common/ScrollProgressBar"
 import { siteConfig } from "@/config/site"
 import "./globals.css"
 
@@ -99,6 +100,7 @@ export default function RootLayout({
         className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased min-h-screen bg-background text-foreground`}
       >
         <Providers>
+          <ScrollProgressBar />
           <Header />
           <main>{children}</main>
           <Footer />

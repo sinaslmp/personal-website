@@ -28,7 +28,7 @@ export default function BlogPage() {
           {posts.map((post, index) => (
             <AnimatedSection key={post.slug} delay={index * 0.1}>
               <Link href={`/blog/${post.slug}`}>
-                <article className="p-6 rounded-xl border border-border bg-card hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 group">
+                <article className="p-6 rounded-xl border border-border bg-card hover:border-primary/50 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10 group">
                   <div className="flex flex-wrap items-center gap-3 mb-3">
                     <Badge variant="secondary" className="text-xs">
                       {post.category}

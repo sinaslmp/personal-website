@@ -90,7 +90,7 @@ export default function AboutPage() {
               const Icon = item.icon
               return (
                 <AnimatedSection key={item.title} delay={index * 0.1}>
-                  <div className="flex gap-4 p-6 rounded-xl border border-border bg-card hover:border-primary/50 transition-colors">
+                  <div className="flex gap-4 p-6 rounded-xl border border-border bg-card transition-all duration-300 ease-out hover:-translate-y-1 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10">
                     <div className="shrink-0 p-2 rounded-lg bg-primary/10">
                       <Icon className="h-5 w-5 text-primary" />
                     </div>
@@ -118,7 +118,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold text-foreground mb-8">Education</h2>
           <div className="space-y-4">
             {education.map((edu) => (
-              <div key={edu.degree} className="p-6 rounded-xl border border-border bg-card">
+              <div key={edu.degree} className="p-6 rounded-xl border border-border bg-card transition-all duration-300 ease-out hover:-translate-y-1 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10">
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
                   <div>
                     <h3 className="font-semibold text-foreground">{edu.degree}</h3>

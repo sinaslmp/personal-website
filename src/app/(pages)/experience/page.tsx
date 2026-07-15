@@ -45,7 +45,7 @@ export default function ExperiencePage() {
 
           <div className="space-y-4">
             {education.map((edu) => (
-              <div key={edu.degree} className="p-6 rounded-xl border border-border bg-card">
+              <div key={edu.degree} className="p-6 rounded-xl border border-border bg-card transition-all duration-300 ease-out hover:-translate-y-1 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10">
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
                   <div>
                     <h3 className="font-semibold text-foreground">{edu.degree}</h3>

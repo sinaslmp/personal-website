@@ -31,7 +31,7 @@ export function SkillBadge({ skill, category, size = "md" }: SkillBadgeProps) {
   return (
     <span
       className={cn(
-        "inline-flex items-center rounded-full border font-medium transition-colors",
+        "inline-flex items-center rounded-full border font-medium transition-all duration-200 ease-out hover:-translate-y-0.5 hover:shadow-sm",
         colorClass,
         sizeClasses[size]
       )}

@@ -13,7 +13,7 @@ interface ProjectCardProps {
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Card className={cn(
-      "group h-full flex flex-col transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5",
+      "group h-full flex flex-col transition-all duration-300 ease-out hover:-translate-y-1 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10",
       project.featured && "border-primary/30"
     )}>
       <CardHeader className="pb-3">
